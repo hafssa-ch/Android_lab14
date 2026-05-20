@@ -77,15 +77,15 @@ com.example.securestoragelabjava14/
 
 ## 🔒 Bonnes pratiques de sécurité
 
-- ✅ **Pas de secret en clair** – token chiffré avec `EncryptedSharedPreferences`
-- ✅ **Aucun log de token** – on affiche seulement sa longueur
-- ✅ `MODE_PRIVATE` pour toutes les écritures de fichiers internes
-- ✅ Cache réservé aux données temporaires / régénérables
-- ✅ Nettoyage complet disponible (prefs + fichiers + cache)
-- ✅ Exceptions gérées sans fuite d’informations
-- ✅ Stockage externe **app-specific** (pas de permission `READ_EXTERNAL_STORAGE`)
-- ✅ Encodage UTF-8 imposé pour tous les fichiers texte
-- ✅ Champ token masqué (`inputType="textPassword"`)
+-  **Pas de secret en clair** – token chiffré avec `EncryptedSharedPreferences`
+-  **Aucun log de token** – on affiche seulement sa longueur
+-  `MODE_PRIVATE` pour toutes les écritures de fichiers internes
+-  Cache réservé aux données temporaires / régénérables
+-  Nettoyage complet disponible (prefs + fichiers + cache)
+-  Exceptions gérées sans fuite d’informations
+-  Stockage externe **app-specific** (pas de permission `READ_EXTERNAL_STORAGE`)
+-  Encodage UTF-8 imposé pour tous les fichiers texte
+-  Champ token masqué (`inputType="textPassword"`)
 
 ---
 
@@ -106,21 +106,21 @@ Exécuter sur un émulateur ou un appareil physique (API ≥ 24)
 💡 Si des erreurs de version persistent, désinstallez l’application puis relancez-la pour recréer le MasterKey.
 
 ## 📱 Guide d’utilisation
-Saisissez un nom, choisissez une langue, activez/désactivez le thème sombre.
+- Saisissez un nom, choisissez une langue, activez/désactivez le thème sombre.
 
-Entrez un token (sera chiffré automatiquement).
+- Entrez un token (sera chiffré automatiquement).
 
-Appuyez sur « Sauvegarder prefs » → les données non sensibles + token chiffré sont stockés.
+- Appuyez sur « Sauvegarder prefs » → les données non sensibles + token chiffré sont stockés.
 
-Redémarrez l’application → « Charger prefs » restaure les champs.
+- Redémarrez l’application → « Charger prefs » restaure les champs.
 
-« Sauvegarder fichier JSON » écrit students.json + note.txt dans le stockage interne.
+- « Sauvegarder fichier JSON » écrit students.json + note.txt dans le stockage interne.
 
-« Charger fichier JSON » lit et affiche les données.
+- « Charger fichier JSON » lit et affiche les données.
 
-« Effacer toutes les données » supprime préférences, fichiers et cache.
+- « Effacer toutes les données » supprime préférences, fichiers et cache.
 
-Un fichier demo_export.txt est automatiquement créé dans le stockage externe app-specific (visible dans le Device File Explorer).
+- Un fichier demo_export.txt est automatiquement créé dans le stockage externe app-specific (visible dans le Device File Explorer).
 
 
 ## 🛠️ Technologies utilisées
